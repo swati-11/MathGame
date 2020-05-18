@@ -1,0 +1,153 @@
+html{
+   height : 100%;
+  background:radial-gradient(circle,#fff, #ccc);
+}
+#container{
+	height : 400px;
+	width: 550px;
+	background-color: #9DD2EA;
+	margin: 100px auto;
+	padding: 20px;
+	border-radius:10px;
+	box-shadow: 4px 4px 0px 0px 009de4;
+	position:relative;
+}
+#score{
+	Background-color: #F1FF92;
+	color: #88BESF;
+	padding: 10px;
+	position: absolute;
+	left: 500px;
+	box-shadow: 0px 4px #9da853;
+	
+}
+#correct{
+	position : absolute;
+	left:250px;
+	background-color: green;
+	color: white;
+	padding :10px;
+	box-shadow: 4px 4px 5px 0px black;
+	display:none;
+}
+#wrong{
+	position : absolute;
+	left:250px;
+	background-color: red;
+	color: white;
+	padding :10px;
+	box-shadow: 4px 4px 5px 0px  black;
+	display:none;
+}
+#question{
+	width: 400px;
+	height: 150px;
+	margin: 50px auto 10px auto;
+	background-color: #9DA0EA;
+	box-shadow: 0px 4px #535aa8;
+	font-size:100px;
+	text-align:center;
+	font-family:cursive,sans-serif;
+	color: black;
+	line-height:150px;
+		
+}
+#instruction{
+	width: 400px;
+	height: 50px;
+	background-color:#B481d9;
+	margin 	: 10px auto;
+	line-height: 45px;
+	box-shadow: 0px 4px #8153a8;
+	font-size:25px;
+	text-align:center;
+	font-family:sans-serif;
+	color: black;
+}
+
+#choices{
+	width: 450px;
+	height: 100px;
+	margin: 10px auto;
+}
+
+.box{
+	height :85px;
+	width:85px;
+	background-color: white;
+	float : left;
+	margin-right: 20px;
+    border-radius: 3px;
+	cursor:pointer;
+	box-shadow: 0px 4px rgba(0, 0, 0, 2);
+	text-align:center;
+	line-height: 80px; 
+	position:relative;
+	transition: all 0.2s;
+	
+}
+
+#box4{
+	
+margin-right: 0px;	
+}
+
+#box1{
+	
+margin-left: 25px;	
+}
+.box:hover,start-reset:hover{
+	background-color: #9C89F6;
+	color:white;
+	box-shadow: 0px 4px #6b54d3;
+	
+}
+.box:active, #start-reset:active{
+	box-shadow:0px 0px #6b54d3;
+	top:4px;  /*move down 4 px*/
+}
+
+#start-reset{
+	height :30px;
+	width:80px;
+	background-color: rgba(255,255,255,0.5);
+	margin-right: 20px;
+    border-radius: 3px;
+	cursor:pointer;
+	box-shadow: 0px 4px rgba(0, 0, 0, 2);
+	text-align:center;
+    left:235px;
+	position:relative;
+	transition: all 0.2s;
+	line-height:30px;
+}
+#time-remaining{
+	width:180px;
+	height :30px;
+    text-align:center;
+	line-height:30px;
+	position:absolute;
+	top: 400px;
+	left: 400px;
+	background-color: rgba(181,235,36,0.8);
+	border-radius :3px;
+	box-shadow: 0px 4px rgba(0,0,0,0.2);
+	display:none; //or visibility:hidden but it would take up the space and interact w other elements
+}
+
+#game-over{
+	height :200px;
+	width:500px;
+	background-color:orange;
+	color: white ;
+	font-size:2.5em;
+	text-align:center;
+	text-transform: uppercase;
+	position:absolute;
+	left:440px;	 
+	top: 220px;
+    z-index: 10;
+    display :none;
+}
+	 
+	 
